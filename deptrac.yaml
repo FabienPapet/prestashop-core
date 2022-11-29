@@ -1,0 +1,80 @@
+deptrac:
+    paths:
+        - ./src
+    layers:
+        - name: CartRuleBundle
+          collectors:
+              - type: className
+                regex: .*PrestaShop\\Bundle\\CartRuleBundle\\.*
+        - name: CoreBundle
+          collectors:
+              - type: className
+                regex: .*PrestaShop\\Bundle\\CoreBundle\\.*
+
+        - name: Product
+          collectors:
+              - type: className
+                regex: .*PrestaShop\\Product\\.*
+
+        - name: CartRule
+          collectors:
+              - type: className
+                regex: .*PrestaShop\\CartRule\\.*
+
+        - name: Currency
+          collectors:
+              - type: className
+                regex: .*PrestaShop\\Currency\\.*
+
+        - name: Customer
+          collectors:
+              - type: className
+                regex: .*PrestaShop\\Customer\\.*
+
+        - name: Customization
+          collectors:
+              - type: className
+                regex: .*PrestaShop\\Customization\\.*
+
+        - name: Employee
+          collectors:
+              - type: className
+                regex: .*PrestaShop\\Employee\\.*
+
+        - name: Lang
+          collectors:
+              - type: className
+                regex: .*PrestaShop\\Lang\\.*
+        - name: Shop
+          collectors:
+              - type: className
+                regex: .*PrestaShop\\Shop\\.*
+
+    ruleset:
+        CartRuleBundle:
+            - CartRule
+        CoreBundle:
+            - Shop
+            - Lang
+        Price:
+            - Customer
+            - Currency
+            - Customization
+            - Shop
+            - Lang
+        Product:
+            - Currency
+            - Shop
+            - Lang
+        CartRule:
+            - Currency
+            - Product
+            - Customer
+            - Shop
+        Currency:
+            - Lang
+            - Shop
+        Employee:
+            - Lang
+        Customer: []
+        Shop: []

@@ -3,9 +3,9 @@
 namespace PrestaShop\Bundle\CoreBundle\Repository\Shop;
 
 use PrestaShop\Bundle\CoreBundle\Repository\AbstractRepository;
-use PrestaShop\Shop\Model\Shop;
-use PrestaShop\Shop\Model\ShopInterface;
-use PrestaShop\Shop\Repository\ShopRepositoryInterface;
+use PrestaShop\Domain\Shop\Model\Shop;
+use PrestaShop\Domain\Shop\Model\ShopInterface;
+use PrestaShop\Domain\Shop\Repository\ShopRepositoryInterface;
 
 class ShopRepository extends AbstractRepository implements ShopRepositoryInterface
 {

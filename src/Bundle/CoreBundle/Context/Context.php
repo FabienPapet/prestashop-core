@@ -2,8 +2,8 @@
 
 namespace PrestaShop\Bundle\CoreBundle\Context;
 
-use PrestaShop\Language\Model\LanguageInterface;
-use PrestaShop\Shop\Model\ShopInterface;
+use PrestaShop\Domain\Language\Model\LanguageInterface;
+use PrestaShop\Domain\Shop\Model\ShopInterface;
 
 final class Context
 {

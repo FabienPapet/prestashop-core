@@ -3,9 +3,9 @@
 namespace PrestaShop\Bundle\CoreBundle\Repository\Currency;
 
 use PrestaShop\Bundle\CoreBundle\Repository\AbstractRepository;
-use PrestaShop\Currency\Model\Currency;
-use PrestaShop\Currency\Model\CurrencyInterface;
-use PrestaShop\Currency\Repository\CurrencyRepositoryInterface;
+use PrestaShop\Domain\Currency\Model\Currency;
+use PrestaShop\Domain\Currency\Model\CurrencyInterface;
+use PrestaShop\Domain\Currency\Repository\CurrencyRepositoryInterface;
 
 class CurrencyRepository extends AbstractRepository implements CurrencyRepositoryInterface
 {

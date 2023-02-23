@@ -2,11 +2,11 @@
 
 namespace PrestaShop\Bundle\CoreBundle\Context;
 
-use PrestaShop\Language\Model\Language;
-use PrestaShop\Shop\DefaultShopProviderInterface;
-use PrestaShop\Shop\Model\ShopInterface;
-use PrestaShop\Shop\Model\ShopUrl;
-use PrestaShop\Shop\Repository\ShopRepositoryInterface;
+use PrestaShop\Domain\Language\Model\Language;
+use PrestaShop\Domain\Shop\DefaultShopProviderInterface;
+use PrestaShop\Domain\Shop\Model\ShopInterface;
+use PrestaShop\Domain\Shop\Model\ShopUrl;
+use PrestaShop\Domain\Shop\Repository\ShopRepositoryInterface;
 use Symfony\Component\HttpFoundation\Request;
 
 class ContextBuilder

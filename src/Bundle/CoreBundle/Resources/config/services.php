@@ -3,11 +3,11 @@
 use PrestaShop\Bundle\CoreBundle\Repository\AbstractRepository;
 use PrestaShop\Bundle\CoreBundle\Repository\Currency\CurrencyRepository;
 use PrestaShop\Bundle\CoreBundle\Repository\Shop\ShopRepository;
-use PrestaShop\Currency\Configuration\CurrencyConfigurationInterface;
-use PrestaShop\Currency\DefaultCurrencyProvider;
-use PrestaShop\Currency\DefaultCurrencyProviderInterface;
-use PrestaShop\Currency\Repository\CurrencyRepositoryInterface;
-use PrestaShop\Shop\Repository\ShopRepositoryInterface;
+use PrestaShop\Domain\Currency\Configuration\CurrencyConfigurationInterface;
+use PrestaShop\Domain\Currency\DefaultCurrencyProvider;
+use PrestaShop\Domain\Currency\DefaultCurrencyProviderInterface;
+use PrestaShop\Domain\Currency\Repository\CurrencyRepositoryInterface;
+use PrestaShop\Domain\Shop\Repository\ShopRepositoryInterface;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use Tests\PrestaShop\Currency\Mock\MockCurrencyConfiguration;
 use function Symfony\Component\DependencyInjection\Loader\Configurator\param;

@@ -2,7 +2,7 @@
 
 namespace Tests\PrestaShop\Bundle\CoreBundle\Repository\Currency;
 
-use PrestaShop\Shop\Repository\ShopRepositoryInterface;
+use PrestaShop\Domain\Shop\Repository\ShopRepositoryInterface;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
 class ShopRepositoryTest extends KernelTestCase
